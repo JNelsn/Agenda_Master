@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2FFF7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DetalhesContatoActivity">
+
+        <ImageView
+            android:id="@+id/avatar_contato"
+            android:layout_width="386dp"
+            android:layout_height="297dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/ic_action_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgnome"
+            android:layout_width="75dp"
+            android:layout_height="51dp"
+            android:elevation="20dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/ic_fig_nome"
+            tools:layout_editor_absoluteX="-12dp"
+            tools:layout_editor_absoluteY="398dp"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatar_contato"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/activity_detalhes_contato_nome"
+            tools:text="João Nelson Pires Junior"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imgnome"
+            app:layout_constraintTop_toTopOf="@+id/imgnome"
+            app:layout_constraintBottom_toBottomOf="@+id/imgnome"/>
+
+        <ImageView
+            android:id="@+id/imgemail"
+            android:layout_width="75dp"
+            android:layout_height="51dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/ic_email"
+            tools:layout_editor_absoluteX="-12dp"
+            tools:layout_editor_absoluteY="398dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgnome"/>
+
+        <TextView
+            android:id="@+id/activity_detalhes_contato_email"
+            tools:text="jujunpires@gmail.com"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imgemail"
+            app:layout_constraintTop_toTopOf="@+id/imgemail"
+            app:layout_constraintBottom_toBottomOf="@+id/imgemail"/>
+
+
+        <ImageView
+            android:id="@+id/imgtelefone"
+            android:layout_width="75dp"
+            android:layout_height="51dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/ic_baseline_phone_24"
+            tools:layout_editor_absoluteX="-12dp"
+            tools:layout_editor_absoluteY="398dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgemail"/>
+
+        <TextView
+            android:id="@+id/activity_detalhes_contato_telefone"
+            tools:text="(11)93364-6957"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imgtelefone"
+            app:layout_constraintTop_toTopOf="@+id/imgtelefone"
+            app:layout_constraintBottom_toBottomOf="@+id/imgtelefone"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
